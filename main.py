@@ -85,7 +85,7 @@ timeout_duration = 300  # 5 minutes
 
 # Initialize bot with random session
 bot = Client(
-    "ugx",
+    "happyji",
     api_id=API_ID,
     api_hash=API_HASH,
     bot_token=BOT_TOKEN,
@@ -190,11 +190,11 @@ photozip = 'https://i.ibb.co/v6Vr7HCt/1000003297.png'
 
 
 # Inline keyboard for start command
-BUTTONSCONTACT = InlineKeyboardMarkup([[InlineKeyboardButton(text="📞 Contact", url="https://t.me/MARCOXCHAT_BOT")]])
+BUTTONSCONTACT = InlineKeyboardMarkup([[InlineKeyboardButton(text="📞 Contact", url="https://t.me/helpto_allbot")]])
 keyboard = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton(text="🛠️ Help", url="https://t.me/MARCOXCHAT_BOT")        ],
+            InlineKeyboardButton(text="🛠️ Help", url="https://t.me/helpto_allbot")        ],
     ]
 )
 
@@ -292,7 +292,7 @@ async def getcookies_handler(client: Client, m: Message):
 @bot.on_message(filters.command(["stop"]) )
 async def restart_handler(_, m):
     
-    await m.reply_text("🚦**STOPPED**", True)
+    await m.reply_text("🚦**STOPPED kya kucharni h**", True)
     os.execl(sys.executable, sys.executable, *sys.argv)
         
 
@@ -318,10 +318,10 @@ async def start(bot: Client, m: Message):
             if not is_authorized:
                 await m.reply_photo(
                     photo=photologo,
-                    caption="**Mʏ Nᴀᴍᴇ [𝐌 𝚨 𝐑 𝐂 𝚶](https://t.me/MARCOXCHAT_BOT)\n\nYᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴀᴄᴄᴇꜱꜱ ᴛᴏ ᴜꜱᴇ ᴛʜɪꜱ ʙᴏᴛ\nCᴏɴᴛᴀᴄᴛ [𝐌 𝚨 𝐑 𝐂 𝚶](https://t.me/MARCOXCHAT_BOT) ғᴏʀ ᴀᴄᴄᴇꜱꜱ**",
+                    caption="**Mʏ Nᴀᴍᴇ [H A P P Y JI](https://t.me/helpto_allbot)\n\nYᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴀᴄᴄᴇꜱꜱ ᴛᴏ ᴜꜱᴇ ᴛʜɪꜱ ʙᴏᴛ\nCᴏɴᴛᴀᴄᴛ [H A P P Y JI](https://t.me/helpto_allbot) ғᴏʀ ᴀᴄᴄᴇꜱꜱ**",
                     reply_markup=InlineKeyboardMarkup([
     [
-        InlineKeyboardButton("𝐌 𝚨 𝐑 𝐂 𝚶", url="https://t.me/MARCOXCHAT_BOT")
+        InlineKeyboardButton("H A P P Y JI", url="https://t.me/helpto_allbot")
     ],
     [
         InlineKeyboardButton("ғᴇᴀᴛᴜʀᴇꜱ 🪔", callback_data="features"),
@@ -347,7 +347,7 @@ async def start(bot: Client, m: Message):
                 caption=f"**Mʏ ᴄᴏᴍᴍᴀɴᴅꜱ ғᴏʀ ʏᴏᴜ [{m.from_user.first_name} ](tg://settings)**\n\n{commands_list}",
                 reply_markup=InlineKeyboardMarkup([
     [
-        InlineKeyboardButton("𝐌 𝚨 𝐑 𝐂 𝚶", url="https://t.me/MARCOXCHAT_BOT")
+        InlineKeyboardButton("H A P P Y JI", url="https://t.me/helpto_allbot")
     ],
     [
         InlineKeyboardButton("ғᴇᴀᴛᴜʀᴇꜱ 🪔", callback_data="features"),
@@ -375,11 +375,11 @@ auth_filter = filters.create(auth_check_filter)
 @bot.on_message(~auth_filter & filters.private & filters.command)
 async def unauthorized_handler(client, message: Message):
     await message.reply(
-        "<b>Mʏ Nᴀᴍᴇ [𝐌 𝚨 𝐑 𝐂 𝚶🦋](https://t.me/MARCOXCHAT_BOT)</b>\n\n"
+        "<b>Mʏ Nᴀᴍᴇ [H A P P Y JI🦋](https://t.me/helpto_allbot)</b>\n\n"
         "<blockquote>You need to have an active subscription to use this bot.\n"
         "Please contact admin to get premium access.</blockquote>",
         reply_markup=InlineKeyboardMarkup([[
-            InlineKeyboardButton("💫 Get Premium Access", url="https://t.me/MARCOXCHAT_BOT")
+            InlineKeyboardButton("💫 Get Premium Access", url="https://t.me/helpto_allbot")
         ]])
     )
 
@@ -884,10 +884,10 @@ async def txt_handler(bot: Client, m: Message):
 
             try:
                 cc = (
-    f"<b>𝐓𝐈𝐓𝐋𝐄 ➔<b> {name}\n\n<b>𝐁𝐀𝐓𝐂𝐇 ➔<b> {b_name}\n\n<b>𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃 𝐁𝐘 ➔<b> 𝐌𝚨𝐑𝐂𝚶\n"
+    f"<b>𝐓𝐈𝐓𝐋𝐄 ➔<b> {name}\n\n<b>𝐁𝐀𝐓𝐂𝐇 ➔<b> {b_name}\n\n<b>𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃 𝐁𝐘 ➔<b> H A A P Y JI\n"
 )
                 cc1 = (
-    f"<b>𝐓𝐈𝐓𝐋𝐄 ➔<b> {name}\n\n<b>𝐁𝐀𝐓𝐂𝐇 ➔<b> {b_name}\n\n<b>𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃 𝐁𝐘 ➔<b> 𝐌𝚨𝐑𝐂𝚶\n"
+    f"<b>𝐓𝐈𝐓𝐋𝐄 ➔<b> {name}\n\n<b>𝐁𝐀𝐓𝐂𝐇 ➔<b> {b_name}\n\n<b>𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃 𝐁𝐘 ➔<b> H A P P Y JI\n"
 )
                 cczip = f'[📁]Zip Id : {str(count).zfill(3)}\n**Zip Title :** `{name1} .zip`\n<blockquote><b>Batch Name :</b> {b_name}</blockquote>\n\n**Extracted by➤**{CR}\n' 
                 ccimg = (
@@ -1079,7 +1079,7 @@ async def txt_handler(bot: Client, m: Message):
         f"├ 🖼️ ɪᴍᴀɢᴇꜱ : <code>{img_count}</code>\n"
         "╰────────────────────────────\n\n"
         
-        "<i>ᴇxᴛʀᴀᴄᴛᴇᴅ ʙʏ 𝐌 𝚨 𝐑 𝐂 𝚶 🤖</i>"
+        "<i>ᴇxᴛʀᴀᴄᴛᴇᴅ ʙʏ H A P P Y JI 🤖</i>"
     )
 )
 
@@ -1158,9 +1158,9 @@ async def details_callback(client, callback_query: CallbackQuery):
     await callback_query.answer()
     details_text = (
         "**📋 Bot Details 📋**\n\n"
-        "• 🤖 Bot Name: 𝐌 𝚨 𝐑 𝐂 𝚶 🦋\n"
-        "• 👨‍💻 Developer: 𝐌 𝚨 𝐑 𝐂 𝚶\n"
-        "• 📱 Contact: @MARCOXCHAT_BOT\n"
+        "• 🤖 Bot Name: H A P P Y JI 🦋\n"
+        "• 👨‍💻 Developer: H A P P Y JI\n"
+        "• 📱 Contact: @helpto_allbot\n"
         "• 🔄 Version: 1.0\n"
         "• 📝 Language: Python\n"
         "• 🛠️ Framework: Pyrogram\n\n"
@@ -1202,7 +1202,7 @@ async def back_to_start_callback(client, callback_query: CallbackQuery):
         ),
         reply_markup=InlineKeyboardMarkup([
             [
-                InlineKeyboardButton("𝐌 𝚨 𝐑 𝐂 𝚶", url="https://t.me/MARCOXCHAT_BOT")
+                InlineKeyboardButton("H A P P Y JI", url="https://t.me/helpto_allbot")
             ],
             [
                 InlineKeyboardButton("ғᴇᴀᴛᴜʀᴇꜱ 🪔", callback_data="features"),
