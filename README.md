@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="https://i.ibb.co/v6Vr7HCt/1000003297.png" alt="DEV-TXT-LEECH">
+  <img src="https://i.ibb.co/v6Vr7HCt/1000003297.png" alt="SEM-TXT-LEECH">
 </p>
 <h1 align="center">
-  <a href="https://github.com/VAiDH1661/ITsGOLU_UPLOADER">
+  <a href="https://github.com/VAiDH1661/ITsSEM_UPLOADER">
 </h1>
 <br>
 <details>
